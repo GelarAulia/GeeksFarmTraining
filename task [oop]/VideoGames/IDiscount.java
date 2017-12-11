@@ -11,7 +11,7 @@ package VideoGames;
  */
 //Abstraction
 public interface IDiscount {
-    //Polymorphism 
-    public void discount(int price, double disc);
-    public void discount(int price, int disc);
+    //Polymorphism
+    public void discount(int price, double sale);
+    public void discount(int price, int sale);
 }

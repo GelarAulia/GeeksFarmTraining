@@ -11,7 +11,33 @@ package VideoGames;
  */
 public class VideoGamesVar {
     //Encapsulation
-    protected String name;
-    protected int price;
-    protected String publisher;
+    private String gameName; 
+    private int gamePrice;
+    private String gamePublisher;
+    //Polymorphism
+    public VideoGamesVar() {
+        
+    }
+    
+    public VideoGamesVar(String name, int price, String publisher) { 
+        this.gameName = name;
+        this.gamePrice = price;
+        this.gamePublisher = publisher;
+    }
+    
+    /**Get variable value without accessing variable itself 
+     * @return string name value*/
+    public String getName(){ 
+        return this.gameName;
+    }
+    /**Get variable value without accessing variable itself 
+     * @return integer price value*/
+    public int getPrice(){
+        return this.gamePrice;
+    }
+    /**Get variable value without accessing variable itself 
+     * @return string publisher name value*/
+    public String getPublisher(){
+        return this.gamePublisher;
+    }
 }
